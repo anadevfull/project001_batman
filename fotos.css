@@ -6,7 +6,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    background-color: #b1abab;
+    background-color: hsl(0, 4%, 68%);
 }
 
 #title-galery-photos{
@@ -86,8 +86,47 @@ span {
         column-gap: 20px;
       }
 
+    #fixed {
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    
+    header {
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000;
+    }    
+        
+    nav {
+        width: 60%;
+    }
 
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #000;
+    }
 
+    li {
+        background-color: #000;
+        color: aliceblue;
+        list-style: none;
+        cursor: pointer;
+        font-size: 19px;
+        transition: 3s;
+        font-family: "Kdam Thmor Pro", sans-serif;
+    }
 
+    li:hover {
+        color: #d21617;
+    }
 
+    #logo {
+        width:150px;
+        height: 90px;
+    }
 }
