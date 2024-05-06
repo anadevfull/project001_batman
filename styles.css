@@ -203,6 +203,10 @@ span {
     position: static;
 }
 
+header{
+    margin-top: 20px;
+}
+
 .footer-navigation {
     display: block;
 }
@@ -212,7 +216,7 @@ nav {
 }
 
 #banner {
-    margin-top: 50px;
+    margin-top: 20px;
     background-position: 81% 50%;
 }
 
