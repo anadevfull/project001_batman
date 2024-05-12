@@ -123,6 +123,7 @@ li:hover {
 
 .actor-cards-container {
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -132,7 +133,7 @@ li:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
-    column-gap: 40px;
+    column-gap: 20px;
 }
 
 .card {
@@ -158,14 +159,20 @@ li:hover {
 
 .banner-1 {
     background-image: url(./assets/robert3.jpg);
+    background-position: 60% 50%;
+    width: 97%;
 }
 
 .banner-2 {
     background-image: url(./assets/zoe3.jpg);
+    background-position: 50% 0;
+    width: 97%;
 }
 
 .banner-3 {
     background-image: url(./assets/gordon1.jpg);
+    background-position: 50% 0;
+    width: 97%;
 }
 
 footer {
