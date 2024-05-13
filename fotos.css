@@ -9,6 +9,10 @@
     background-color: hsl(0, 4%, 68%);
 }
 
+.fixed {
+    width: 100%;
+}
+
 header {
     width: 100%;
     height: 120px;
@@ -19,8 +23,6 @@ header {
     justify-content: center;
     padding: 5px 0;
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
 }
 
 .logo {
@@ -67,17 +69,17 @@ li:hover {
 .container-main {
     width: 100%;
     height: auto;
-    margin-top: 130px;
+    margin-top: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-
  
 .photo-gallery {
     display:flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
 }
 
 .photo-item {
@@ -121,6 +123,7 @@ span {
 .footer-navigation {
     display: block;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .footer-list{
@@ -131,63 +134,57 @@ span {
     width: 100%;
 }
 
-@media(min-width: 768px){
+/* ********************************************  */
 
+@media(min-width: 768px){
     
-header {
-    height: 90px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.fixed {
+    position: fixed;
+    top: 0;
 }
 
-#title-galery-photo {
-    display: none;
+header {
+    height: 150px;
 }
 
 nav {
     display: flex;
-    width: 60%;
+    width: 350px;  
+    position: fixed;
+    right: 10px; 
+    top: 30px; 
 }
 
-ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-li {
-    color: aliceblue;
-    list-style: none;
-    cursor: pointer;
-    font-size: 19px;
-    transition: 3s;
-    font-family: "Kdam Thmor Pro", sans-serif;
-}
-
-li:hover {
-    color: #d21617;
-}
-
-#logo {
+.logo {
     width:150px;
     height: 90px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+h1 {
+    width: 50%;
+    text-align: center;
+    position: fixed;
+    top: 90px;
 }
 
 .photo-gallery {
-grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
 }
     
 footer {
-    height: 300px;
+    height: 90px;
     background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     justify-content: space-around;
-    padding: 50px 0;
-    box-sizing: border-box;
+    position: static;
 }
 
 img {
