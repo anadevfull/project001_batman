@@ -15,8 +15,8 @@
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
 
 .container-title {
     width: 100%;
-    height: 140px;
+    height: 100px;
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -136,7 +136,7 @@ img {
     
     #fixed {
         height: 100px;
-        width: 150%;
+        width: 100%;
         display: flex;
         position: fixed;
         top: 0;
@@ -183,8 +183,8 @@ img {
         width:130px;
         height: 90px;
         position: fixed;
-        left: 10px;
         top: 10px;
+        left: 10px;
     }
 
     .container-title{
@@ -200,7 +200,17 @@ img {
     }
 
     .container-card{
-        margin-top: 90px;
+        margin-top: 30px;
+    }
+
+    footer {
+        height: 90px;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+
+    .footer-navigation{
+        display: none;
     }
 
     .footer-list{
