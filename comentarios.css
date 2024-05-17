@@ -97,33 +97,6 @@ button {
     display: none;
 }
 
-footer {
-    width: 100%;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    background-color: #000;
-    padding-top: 20px;
-}
-
-.footer-navigation {
-    display: block;    
-}
-
-.footer-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-span {
-    text-align: center;
-}
-
 .container-stars {
     width: 80%;
     margin-top: 20px;
@@ -166,16 +139,41 @@ p {
     color: #8696a0;
 }
 
+footer {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+}
+
+.footer-navigation {
+    display: block;    
+}
+
+.footer-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 20px;
+}
+
+.text-footer {
+    width: 100%;
+    position: absolute;
+    top:150px;
+}
+
 span {
     text-align: center;
+    display: block;
+    font-size: 14px;
 }
-
-img {
-    height: 90px;
-}
-
-
-*/
 
 /* *x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x**x*x*x*x*x*x*x*x**x*x*x*x*x* */
 
@@ -233,4 +231,4 @@ img {
     }
 
 
-}*/
+*/

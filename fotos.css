@@ -9,42 +9,47 @@
     background-color: hsl(0, 4%, 68%);
 }
 
-.fixed {
+
+.container {
     width: 100%;
-    height: 150px;
-}
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
 
 header {
     width: 100%;
     height: 150px;
-    background-color: #000;    
+    background-color: #000;  
+    color: #fff;  
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 0;
-    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
 }
 
-.logo {
+#logo {
     height: 90px;
     width: 130px;
+    position: absolute;
+    top: 10px;
+    left: 35%;
 }
 
-#title-galery-photos {
-    width: 200px;
-    background-color: #000;
+h1 {
+    width: 90%;
     color: #fff;
     font-size: 25px;
     font-weight: bold; 
-    font-family: "Kdam Thmor Pro", sans-serif;   
-}
-
-font {
+    font-family: "Kdam Thmor Pro", sans-serif; 
+    position: absolute;  
+    top: 100px;
+    left: 120px;
     background-color: #000;
 }
 
-nav {
+.header-navigation {
     display: none;
 }
 
@@ -72,7 +77,6 @@ li:hover {
 .container-main {
     width: 100%;
     height: auto;
-    margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,10 +84,11 @@ li:hover {
  
 .photo-gallery {
     display:flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin-bottom: 190px;
+    margin-bottom: 20px;
 }
 
 .photo-item {
@@ -104,38 +109,43 @@ li:hover {
 .photo-item:hover {
 transform: scale(1.09);
 transition: 2s;
-
 }
 
-footer{
+footer {
     width: 100%;
+    height: 210px;
     display: flex;
     flex-direction: column;
     color: #fff;
     background-color: #000;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-}
-
-span {
-    color: #fff;
-    font-family: "Kdam Thmor Pro", sans-serif;
-    background-color: #000000;
+    position: relative;
 }
 
 .footer-navigation {
-    display: block;
-    width: 100%;
-    margin-bottom: 5%;
+    display: block;    
 }
 
-.footer-list{
+.footer-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 20px;
+}
+
+.text-footer {
     width: 100%;
+    position: absolute;
+    top:150px;
+}
+
+span {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    background-color: #000;
 }
 
 /* ********************************************  */
