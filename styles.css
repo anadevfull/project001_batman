@@ -190,6 +190,7 @@ img {
 
 span {
     color: #fff;
+    font-size: 14px;
     font-family: "Kdam Thmor Pro", sans-serif;
 }
 
@@ -273,20 +274,38 @@ nav {
 
 .card {
     width: 95%;
-    margin: 10px 0 0 13px;
-    padding-left: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
-.button{
+
+.banner-1 {
+    width: 100%;    
+}
+
+.banner-2 {
+    width: 100%; 
+    background-position: 40% 0;
+}
+
+.banner-3 {
+    width: 100%;
+    background-position: 45% 0;
+}
+.button {
     width: 100%;
 }
 
 footer {
+    height: 210px;
     margin-top: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .footer-navigation {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 }
