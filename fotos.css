@@ -29,7 +29,7 @@ header {
     margin-bottom: 10px;
 }
 
-#logo {
+#logo-header {
     height: 90px;
     width: 130px;
     position: absolute;
@@ -120,8 +120,17 @@ footer {
     position: relative;
 }
 
+#logo-footer {
+    display: none;
+    width: 130px;
+    height: 90px;
+}
+
 .footer-navigation {
     display: block;    
+    width: 100%;
+    height: 100%;
+    background-color: #000;
 }
 
 .footer-list {
@@ -150,48 +159,26 @@ span {
 /* ********************************************  */
 
 @media(min-width: 768px){
-    
-.fixed {
-    height: 100px;
-    position: fixed;
-    top: 0;
-}
 
-header {
-    height: 100px;
-}
-
-nav {
-    width: 400px;  
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    right: 10px; 
-    top: 10px; 
-}
-
-.logo {
-    width:150px;
-    height: 90px;
-    position: fixed;
-    left: 10px;
-    top: 10px;
+#logo-header {
+    left: 20px;
 }
 
 h1 {
-    width: 50%;
-    text-align: center;
-    position: fixed;
-    top: 50px;
+    left: 550px;
+    top: 80px;
+}
+
+.header-navigation {
+    display: flex;
+    width: 60%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .container-main {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
+    margin-top: 0;
 }
 
 .photo-gallery {
@@ -202,27 +189,23 @@ h1 {
 }
     
 footer {
-    height: 90px;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    position: static;
+    height: 170px;
+    margin-top: 20px;
 }
 
-img {
-    height: 90px;
-}
-
-span {
-    color: #fff;
-    font-family: "Kdam Thmor Pro", sans-serif;
-    background-color: #000000;
-} 
-
-.footer-navigation{
+.footer-navigation {
     display: none;
+}
+
+#logo-footer {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 610px;
+}
+
+.text-footer {
+    top: 120px;
 }
 
 }
