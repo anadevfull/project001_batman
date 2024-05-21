@@ -29,7 +29,7 @@ header {
     margin-bottom: 20px;
 }
 
-#logo {
+#logo-header {
     height: 90px;
     width: 130px;
     position: absolute;
@@ -38,7 +38,6 @@ header {
 }
 
 h1 {
-    width: 90%;
     color: #fff;
     font-size: 25px;
     font-weight: bold; 
@@ -149,6 +148,22 @@ footer {
     position: relative;
 }
 
+hr {
+    display: none;
+    border: 1px solid #ccc;
+    width: 90%;
+    margin-left: 60px;
+}
+
+#logo-footer {
+    width: 130px;
+    height: 90px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 610px;
+}
+
 .footer-navigation {
     display: block;    
 }
@@ -173,13 +188,77 @@ span {
     text-align: center;
     display: block;
     font-size: 14px;
+    font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 /* *x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x*x**x*x*x*x*x*x*x*x**x*x*x*x*x* */
 
 @media(min-width: 768px) {
 
+header {
+    height: 120px;
+}
 
+#logo-header {
+    left: 20px;
+}
+
+h1 {
+    left: 500px;
+    top: 70px;
+}
+
+.header-navigation {
+    display: flex;
+    width: 60%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.container-card {
+    flex-direction: row;
+    width: 90%;
+    height: 500px;
+    justify-content: space-around;
+    margin: 70px 0 50px 0;
+}
+
+.card {
+    width: 350px;
+    height: 450px;
+}
+
+#date {
+    color: #8696a0;
+    text-align: end;
+}
+
+footer {
+    height: 70px;
+    background-color: #fff;
+}
+
+hr {
+    display: inline;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+#logo-footer {
+    display: none;
+}
+
+.text-footer {
+    top: 20px;
+    color: #b8b8b8;
+    background-color: transparent;
+}
+
+}
+    
 
 
     /*    

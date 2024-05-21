@@ -28,12 +28,12 @@ header {
     margin-bottom: 20px;
 }
 
-#logo {
+#logo-header {
     height: 90px;
     width: 130px;
     position: absolute;
     top: 10px;
-    left: 35%;
+    left: 140px;
 }
 
 h1 {
@@ -44,7 +44,7 @@ h1 {
     font-family: "Kdam Thmor Pro", sans-serif; 
     position: absolute;  
     top: 100px;
-    left: 170px;
+    left: 160px;
 }
 
 .header-navigation {
@@ -85,13 +85,19 @@ li:hover {
 /* <--- footer --->  */
 footer {
     width: 100%;
-    height: 210px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     color: #fff;
     background-color: #000;
     position: relative;
     margin-top: 20px;
+}
+
+#logo-footer {
+    display: none;
+    width: 130px;
+    height: 90px;
 }
 
 .footer-navigation {
@@ -118,6 +124,57 @@ span {
     text-align: center;
     display: block;
     font-size: 14px;
+    font-family: "Kdam Thmor Pro", sans-serif; 
+    background-color: #000;
+}
+
+
+@media(min-width: 768px) {
+
+header {
+    height: 120px;
+}
+
+#logo-header {
+    left: 20px;
+}
+
+h1 {
+    left: 650px;
+    top: 70px;
+}
+
+.header-navigation {
+    display: flex;
+    width: 60%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.container-main {
+    width: 1300px;
+}
+
+footer {
+    height: 180px;
+    margin-top: 20px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+#logo-footer {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 610px;
+}
+
+.text-footer {
+    top: 120px;
+}
 }
 
 
