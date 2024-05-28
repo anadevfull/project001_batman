@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
 
 *{
     margin: 0;
@@ -10,41 +12,29 @@
 
 .container {
     width: 100%;
-    height: 100%;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(./assets/gotham1.jpg);
+    background-position: 50% 70%;
+    background-size: cover;
 }    
 
 /* <--- header --->  */
 header {
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #000;  
     color: #fff;  
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-bottom: 20px;
 }
 
 #logo-header {
     height: 90px;
     width: 130px;
-    position: absolute;
-    top: 10px;
-    left: 140px;
-}
-
-h1 {
-    width: 30%;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold; 
-    font-family: "Kdam Thmor Pro", sans-serif; 
-    position: absolute;  
-    top: 100px;
-    left: 160px;
+    margin-left: 150px;
 }
 
 .header-navigation {
@@ -72,14 +62,120 @@ li:hover {
     color: #d21617;
 }
 
-/* <--- container --->  */
+ /*  <--- container --->  */
 .container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-tittle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.tittle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.container-main-inform {
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+
+/*  <-- endereço -->  */
+.container-address {
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 495px;
-    background-color: lightpink;
+}
+
+.grid {
+    width: 250px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: repeat(3, 50px);
+    row-gap: 40px;
+    padding: 5px;
+    font-family: "FontAwesome";
+    content: "\f3c5";
+    content: "\f095";
+    content: "\f0e0";
+    color: #000;
+    position: relative;
+}
+
+.icons {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.address-tittle {
+    color: dodgerblue;
+    background-color: transparent;
+    text-align: left;
+}
+
+.address-text {
+    color: rgb(185, 185, 185);
+    background-color: transparent;
+    text-align: left;
+}
+
+.fa-solid {
+    color: #000;  
+    width: 20px;
+    height: 20px;
+}
+
+.fa-location-dot {
+    position: absolute;
+    left: 20px;
+    top:17px
+}
+
+.fa-phone {
+    position: absolute;
+    left: 18px;
+    top:107px
+}
+
+.fa-envelope {
+    position: absolute;
+    left: 17px;
+    top:198px
+}
+
+/*  <-- formulario -->  */
+.container-form {
+    width: 100%;
+    height: 50%;
+}
+
+/*  <-- redes sociais -->  */
+.container-social {
+    width: 100%;
+    height: 10%;
+    display: block;
+    align-items: end;
+    background-color: lightgreen;
+    font-family: "FontAwesome";
 }
 
 /* <--- footer --->  */
@@ -91,7 +187,6 @@ footer {
     color: #fff;
     background-color: #000;
     position: relative;
-    margin-top: 20px;
 }
 
 #logo-footer {
@@ -102,6 +197,8 @@ footer {
 
 .footer-navigation {
     display: block;    
+    width: 100%;
+    height: 120px;
 }
 
 .footer-list {
@@ -152,13 +249,8 @@ h1 {
     top: 20px;
 }
 
-.container-main {
-    width: 1300px;
-}
-
 footer {
     height: 180px;
-    margin-top: 20px;
 }
 
 .footer-navigation {
