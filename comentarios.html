@@ -8,34 +8,43 @@
         <link rel="https://fontawesome.com/icons/star?f=classic&s=solid"/>
     </head>
     <body>
-        <div class="container ">
-            
-        <!-- header -->
-            <header>
-                <img id="logo-header" src="./assets/logo4.jpg"/>
-                <h1>Quem assistiu está comentando!</h1>
-                <nav class="header-navigation">
-                    <ul>
-                        <a href="./index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="./fotos.html">
-                            <li>Fotos</li>
-                        </a>
-                        <a href="./comentarios.html">
-                            <li>Comentários</li>
-                        </a>
-                        <a href="./contato.html">
-                            <li>Contato</li>
-                        </a>                   
-                    </ul>
-                </nav>
-            </header>
+        <div class="container ">            
+            <!-- header -->
+            <div class="container-fixed">
+                <header>
+                    <img id="logo-header" src="./assets/logo4.jpg"/>
+                    <h1>Quem assistiu está comentando!</h1>
+                    <nav class="header-navigation">
+                        <ul>
+                            <a href="./index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="./fotos.html">
+                                <li>Fotos</li>
+                            </a>
+                            <a href="./comentarios.html">
+                                <li>Comentários</li>
+                            </a>
+                            <a href="./contato.html">
+                                <li>Contato</li>
+                            </a>                   
+                        </ul>
+                    </nav>
+                </header>                
+                <textarea placeholder="E você, o que achou do filme?"></textarea>
+                <div class="content-stars"> 
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <button type="submit" value="submit">Publicar</button>
+            </div>
 
             <!-- container -->
-            <div class="container-card">
-                <div class="card active">
-                    <!-- card content -->
+            <div class="container-card">                
+                <div class="card">
                     <div class="container-stars">
                         <div class="stars"> 
                             <i class="fa-solid fa-star"></i>
@@ -54,7 +63,7 @@
                     <h3 id="user-name">Nome do Usuário</h3>
                     <h6 id="date">3 days ago</h6>
                 </div>
-                
+                    
                 <div class="card">
                     <div class="container-stars">
                         <div class="stars"> 
@@ -77,7 +86,7 @@
                     <h3 id="user-name">Nome do Usuário</h3>
                     <h6 id="date">5 days ago</h6>
                 </div>
-
+                    
                 <div class="card">
                     <div class="container-stars">
                         <div class="stars"> 
@@ -91,15 +100,13 @@
                     <p>There are many variations of passages of 
                         Lorem Ipsum available, but the majority 
                         have suffered.
-                    <div id="user-img">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <h3 id="user-name">Nome do Usuário</h3>
-                    <h6 id="date">6 days ago</h6>
+                        <div id="user-img">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h3 id="user-name">Nome do Usuário</h3>
+                        <h6 id="date">6 days ago</h6>
                 </div>
-                <button class="nav-btn">Next</button>
             </div>
-
             <!-- footer -->
             <footer>
                 <hr>
@@ -125,6 +132,7 @@
                     <span>Desenvolvido por Ana Paula Bezerra</span>
                 </div>
             </footer>
-    </div>
+        </div>
     </body>
 </html>
+        
